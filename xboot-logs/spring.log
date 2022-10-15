@@ -1,0 +1,564 @@
+2022-06-05 18:14:07.923  INFO 12316 --- [restartedMain] cn.exrick.xboot.XbootApplication         : Starting XbootApplication on DESKTOP-IHTUB82 with PID 12316 (D:\IdeaProject\oa-master\oa-master\oa\target\classes started by 32934 in D:\IdeaProject\oa-master\oa-master\oa)
+2022-06-05 18:14:07.936  INFO 12316 --- [restartedMain] cn.exrick.xboot.XbootApplication         : No active profile set, falling back to default profiles: default
+2022-06-05 18:14:08.096  INFO 12316 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2022-06-05 18:14:08.097  INFO 12316 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\repository\javax\mail\mail\1.4\mail-1.4.jar referenced one or more files that do not exist: file:/D:/maven/repository/javax/mail/mail/1.4/activation.jar
+2022-06-05 18:14:08.097  INFO 12316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-05 18:14:08.098  INFO 12316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-05 18:14:13.351  INFO 12316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-05 18:14:13.352  INFO 12316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-05 18:14:13.535  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.elasticsearch.EsLogDao. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2022-06-05 18:14:13.614  INFO 12316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 239ms. Found 13 JPA repository interfaces.
+2022-06-05 18:14:13.631  INFO 12316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-05 18:14:13.632  INFO 12316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-05 18:14:13.687  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.DepartmentDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.687  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.DepartmentHeaderDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.688  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.DictDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.688  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.DictDataDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.689  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.LogDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.689  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.PermissionDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.690  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.RoleDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.690  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.RoleDepartmentDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.691  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.RoleGroupDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.692  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.RolePermissionDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.692  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.UserDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.693  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.UserDepartmentDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.693  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.UserRoleDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.693  INFO 12316 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.exrick.xboot.modules.base.dao.elasticsearch.EsLogDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-05 18:14:13.693  INFO 12316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 0 Redis repository interfaces.
+2022-06-05 18:14:14.140  INFO 12316 --- [restartedMain] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2022-06-05 18:14:14.194  INFO 12316 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-05 18:14:14.195  INFO 12316 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-05 18:14:14.195  INFO 12316 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-05 18:14:14.195  INFO 12316 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-05 18:14:14.196  INFO 12316 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-05 18:14:14.196  INFO 12316 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-05 18:14:14.196  INFO 12316 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-05 18:14:14.196  INFO 12316 --- [restartedMain] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-05 18:14:14.399  INFO 12316 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-06-05 18:14:14.417  INFO 12316 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-06-05 18:14:14.539  INFO 12316 --- [restartedMain] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-05 18:14:14.786  INFO 12316 --- [restartedMain] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-05 18:14:14.788  INFO 12316 --- [restartedMain] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-05 18:14:14.792  INFO 12316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisCacheConfig' of type [cn.exrick.xboot.config.cache.RedisCacheConfig$$EnhancerBySpringCGLIB$$dc1bc149] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-05 18:14:14.823  INFO 12316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-05 18:14:14.831  INFO 12316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-05 18:14:14.834  INFO 12316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@78788c9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-05 18:14:14.840  INFO 12316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-05 18:14:14.845  INFO 12316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-05 18:14:14.856  INFO 12316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-05 18:14:14.872  INFO 12316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-05 18:14:14.875  INFO 12316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-05 18:14:15.542  INFO 12316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1314 (http)
+2022-06-05 18:14:15.554  INFO 12316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-05 18:14:15.554  INFO 12316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2022-06-05 18:14:15.691  INFO 12316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-05 18:14:15.691  INFO 12316 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7593 ms
+2022-06-05 18:14:16.352  INFO 12316 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-05 18:14:16.659  INFO 12316 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-05 18:14:17.182  INFO 12316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-05 18:14:17.321  INFO 12316 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-06-05 18:14:17.325  INFO 12316 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000205: Loaded properties from resource hibernate.properties: {hibernate.bytecode.use_reflection_optimizer=false, hibernate.dialect.storage_engine=innodb}
+2022-06-05 18:14:17.771  INFO 12316 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-06-05 18:14:18.378  INFO 12316 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-06-05 18:14:21.009  INFO 12316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-05 18:14:21.016  INFO 12316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-05 18:14:21.532  WARN 12316 --- [restartedMain] c.e.x.c.s.p.MyFilterSecurityInterceptor  : Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+2022-06-05 18:14:21.695  INFO 12316 --- [restartedMain] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/xboot/actuator/jolokia' to jolokia-actuator-endpoint
+2022-06-05 18:14:21.844  INFO 12316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-05 18:14:25.067  WARN 12316 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-05 18:14:27.592  INFO 12316 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/xboot/actuator'
+2022-06-05 18:14:27.750  INFO 12316 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-06-05 18:14:27.761  INFO 12316 --- [restartedMain] c.e.xboot.config.swagger.Swagger2Config  : 加载Swagger2
+2022-06-05 18:14:27.793  INFO 12316 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'primaryTaskExecutor'
+2022-06-05 18:14:29.369  INFO 12316 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2022-06-05 18:14:30.641  INFO 12316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69d8f2c1, org.springframework.security.web.context.SecurityContextPersistenceFilter@18704a4d, org.springframework.security.web.header.HeaderWriterFilter@62420a5b, org.springframework.web.filter.CorsFilter@45b90009, org.springframework.security.web.authentication.logout.LogoutFilter@12938e79, cn.exrick.xboot.config.security.validate.ImageValidateFilter$$EnhancerBySpringCGLIB$$a6c8e1f5@1f1c4762, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@43ade59, cn.exrick.xboot.config.security.jwt.JWTAuthenticationFilter@8d417e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6aba89c2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a558789, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2db9091, org.springframework.security.web.session.SessionManagementFilter@654d985c, org.springframework.security.web.access.ExceptionTranslationFilter@24d62beb, cn.exrick.xboot.config.security.permission.MyFilterSecurityInterceptor@646adf92, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62eb96de]
+2022-06-05 18:14:31.051  INFO 12316 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-06-05 18:14:31.065  INFO 12316 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-06-05 18:14:31.065  INFO 12316 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2022-06-05 18:14:31.068  INFO 12316 --- [restartedMain] o.s.s.quartz.LocalDataSourceJobStore     : Using db table-based data access locking (synchronization).
+2022-06-05 18:14:31.069  INFO 12316 --- [restartedMain] o.s.s.quartz.LocalDataSourceJobStore     : JobStoreCMT initialized.
+2022-06-05 18:14:31.070  INFO 12316 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2022-06-05 18:14:31.070  INFO 12316 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-06-05 18:14:31.070  INFO 12316 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2022-06-05 18:14:31.070  INFO 12316 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@34921600
+2022-06-05 18:14:31.090  INFO 12316 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-06-05 18:14:31.712  INFO 12316 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-06-05 18:14:31.712  INFO 12316 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2022-06-05 18:14:31.712  INFO 12316 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2022-06-05 18:14:31.713  INFO 12316 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-05 18:14:31.750  INFO 12316 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-05 18:14:31.828  INFO 12316 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-05 18:14:32.015  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_1
+2022-06-05 18:14:32.022  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2022-06-05 18:14:32.026  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_1
+2022-06-05 18:14:32.033  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_1
+2022-06-05 18:14:32.037  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_1
+2022-06-05 18:14:32.040  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_2
+2022-06-05 18:14:32.046  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_2
+2022-06-05 18:14:32.051  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_2
+2022-06-05 18:14:32.059  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_2
+2022-06-05 18:14:32.070  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_2
+2022-06-05 18:14:32.074  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_3
+2022-06-05 18:14:32.080  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_3
+2022-06-05 18:14:32.084  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_3
+2022-06-05 18:14:32.097  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_3
+2022-06-05 18:14:32.100  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_3
+2022-06-05 18:14:32.104  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_4
+2022-06-05 18:14:32.109  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_4
+2022-06-05 18:14:32.113  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_4
+2022-06-05 18:14:32.120  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_4
+2022-06-05 18:14:32.124  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_4
+2022-06-05 18:14:32.127  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_5
+2022-06-05 18:14:32.133  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_5
+2022-06-05 18:14:32.137  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_5
+2022-06-05 18:14:32.148  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_5
+2022-06-05 18:14:32.152  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_5
+2022-06-05 18:14:32.155  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_6
+2022-06-05 18:14:32.160  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_6
+2022-06-05 18:14:32.164  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_6
+2022-06-05 18:14:32.171  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_6
+2022-06-05 18:14:32.174  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_6
+2022-06-05 18:14:32.179  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_7
+2022-06-05 18:14:32.184  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_7
+2022-06-05 18:14:32.188  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_7
+2022-06-05 18:14:32.194  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_7
+2022-06-05 18:14:32.197  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_7
+2022-06-05 18:14:32.202  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_8
+2022-06-05 18:14:32.206  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_8
+2022-06-05 18:14:32.210  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_8
+2022-06-05 18:14:32.216  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_8
+2022-06-05 18:14:32.219  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_8
+2022-06-05 18:14:32.222  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_9
+2022-06-05 18:14:32.227  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_9
+2022-06-05 18:14:32.231  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_9
+2022-06-05 18:14:32.238  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_9
+2022-06-05 18:14:32.241  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_9
+2022-06-05 18:14:32.244  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_10
+2022-06-05 18:14:32.249  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_10
+2022-06-05 18:14:32.253  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_10
+2022-06-05 18:14:32.259  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_10
+2022-06-05 18:14:32.262  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_10
+2022-06-05 18:14:32.265  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_11
+2022-06-05 18:14:32.270  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_11
+2022-06-05 18:14:32.274  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_11
+2022-06-05 18:14:32.280  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_11
+2022-06-05 18:14:32.283  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_11
+2022-06-05 18:14:32.287  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_12
+2022-06-05 18:14:32.291  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_12
+2022-06-05 18:14:32.296  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_12
+2022-06-05 18:14:32.303  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_12
+2022-06-05 18:14:32.306  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_12
+2022-06-05 18:14:32.309  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_13
+2022-06-05 18:14:32.314  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_13
+2022-06-05 18:14:32.317  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_13
+2022-06-05 18:14:32.323  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_13
+2022-06-05 18:14:32.326  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_13
+2022-06-05 18:14:32.378  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_14
+2022-06-05 18:14:32.387  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_14
+2022-06-05 18:14:32.393  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_14
+2022-06-05 18:14:32.413  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_14
+2022-06-05 18:14:32.427  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_14
+2022-06-05 18:14:32.430  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_15
+2022-06-05 18:14:32.433  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_15
+2022-06-05 18:14:32.435  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_15
+2022-06-05 18:14:32.439  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_15
+2022-06-05 18:14:32.444  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_15
+2022-06-05 18:14:32.447  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_16
+2022-06-05 18:14:32.452  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_16
+2022-06-05 18:14:32.455  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_16
+2022-06-05 18:14:32.461  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_16
+2022-06-05 18:14:32.464  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_16
+2022-06-05 18:14:32.467  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_17
+2022-06-05 18:14:32.471  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_17
+2022-06-05 18:14:32.475  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_17
+2022-06-05 18:14:32.481  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_17
+2022-06-05 18:14:32.484  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_17
+2022-06-05 18:14:32.487  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_18
+2022-06-05 18:14:32.492  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_18
+2022-06-05 18:14:32.495  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_18
+2022-06-05 18:14:32.502  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_18
+2022-06-05 18:14:32.506  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_18
+2022-06-05 18:14:32.510  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_19
+2022-06-05 18:14:32.516  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_19
+2022-06-05 18:14:32.520  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_19
+2022-06-05 18:14:32.526  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_19
+2022-06-05 18:14:32.529  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_19
+2022-06-05 18:14:32.533  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2022-06-05 18:14:32.536  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_20
+2022-06-05 18:14:32.538  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_1
+2022-06-05 18:14:32.542  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_20
+2022-06-05 18:14:32.548  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_2
+2022-06-05 18:14:32.551  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delByIdsUsingPOST_1
+2022-06-05 18:14:32.554  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_2
+2022-06-05 18:14:32.578  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_21
+2022-06-05 18:14:32.586  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_20
+2022-06-05 18:14:32.590  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_21
+2022-06-05 18:14:32.597  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_20
+2022-06-05 18:14:32.601  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_20
+2022-06-05 18:14:32.607  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_22
+2022-06-05 18:14:32.612  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_21
+2022-06-05 18:14:32.615  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_22
+2022-06-05 18:14:32.621  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_21
+2022-06-05 18:14:32.624  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_21
+2022-06-05 18:14:32.627  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_23
+2022-06-05 18:14:32.632  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_22
+2022-06-05 18:14:32.635  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_23
+2022-06-05 18:14:32.640  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_22
+2022-06-05 18:14:32.643  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_22
+2022-06-05 18:14:32.646  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_24
+2022-06-05 18:14:32.651  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_23
+2022-06-05 18:14:32.655  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_24
+2022-06-05 18:14:32.662  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_23
+2022-06-05 18:14:32.664  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_23
+2022-06-05 18:14:32.667  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_25
+2022-06-05 18:14:32.671  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_24
+2022-06-05 18:14:32.676  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_25
+2022-06-05 18:14:32.685  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_24
+2022-06-05 18:14:32.688  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_24
+2022-06-05 18:14:32.691  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_26
+2022-06-05 18:14:32.696  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_25
+2022-06-05 18:14:32.700  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_26
+2022-06-05 18:14:32.705  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_25
+2022-06-05 18:14:32.707  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_25
+2022-06-05 18:14:32.712  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_27
+2022-06-05 18:14:32.716  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteJADUsingPOST_1
+2022-06-05 18:14:32.721  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_26
+2022-06-05 18:14:32.726  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_27
+2022-06-05 18:14:32.730  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByLiUsingGET_1
+2022-06-05 18:14:32.734  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByNotImportUsingGET_1
+2022-06-05 18:14:32.739  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_26
+2022-06-05 18:14:32.744  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: importMoreUsingPOST_1
+2022-06-05 18:14:32.749  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_26
+2022-06-05 18:14:32.756  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_3
+2022-06-05 18:14:32.761  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delByIdsUsingPOST_2
+2022-06-05 18:14:32.766  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_3
+2022-06-05 18:14:32.773  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_27
+2022-06-05 18:14:32.779  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_28
+2022-06-05 18:14:32.783  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByAllSubInTreeByParentIdUsingGET_1
+2022-06-05 18:14:32.790  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_27
+2022-06-05 18:14:32.794  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByParentIdUsingGET_1
+2022-06-05 18:14:32.804  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_27
+2022-06-05 18:14:32.810  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchByTitleUsingGET_1
+2022-06-05 18:14:32.814  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_28
+2022-06-05 18:14:32.820  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_4
+2022-06-05 18:14:32.823  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_28
+2022-06-05 18:14:32.827  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_29
+2022-06-05 18:14:32.836  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_28
+2022-06-05 18:14:32.850  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_4
+2022-06-05 18:14:32.855  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delByIdsUsingPOST_3
+2022-06-05 18:14:32.863  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_5
+2022-06-05 18:14:32.872  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_29
+2022-06-05 18:14:32.877  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_30
+2022-06-05 18:14:32.881  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByAllSubInTreeByParentIdUsingGET_2
+2022-06-05 18:14:32.890  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_29
+2022-06-05 18:14:32.895  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByParentIdUsingGET_2
+2022-06-05 18:14:32.902  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNotParentUsingGET_1
+2022-06-05 18:14:32.911  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_28
+2022-06-05 18:14:32.918  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchByTitleUsingGET_2
+2022-06-05 18:14:32.923  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_29
+2022-06-05 18:14:32.932  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_30
+2022-06-05 18:14:32.939  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_31
+2022-06-05 18:14:32.946  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_30
+2022-06-05 18:14:32.963  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_29
+2022-06-05 18:14:32.967  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_30
+2022-06-05 18:14:32.971  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_31
+2022-06-05 18:14:32.974  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_32
+2022-06-05 18:14:32.980  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_31
+2022-06-05 18:14:32.982  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_30
+2022-06-05 18:14:32.985  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_31
+2022-06-05 18:14:32.989  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_32
+2022-06-05 18:14:32.992  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_33
+2022-06-05 18:14:32.998  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_32
+2022-06-05 18:14:33.001  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_31
+2022-06-05 18:14:33.006  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_32
+2022-06-05 18:14:33.010  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_33
+2022-06-05 18:14:33.014  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_34
+2022-06-05 18:14:33.019  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_33
+2022-06-05 18:14:33.021  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_32
+2022-06-05 18:14:33.029  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_5
+2022-06-05 18:14:33.033  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delByIdsUsingPOST_4
+2022-06-05 18:14:33.038  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_6
+2022-06-05 18:14:33.045  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_34
+2022-06-05 18:14:33.050  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_35
+2022-06-05 18:14:33.055  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByAllSubInTreeByParentIdUsingGET_3
+2022-06-05 18:14:33.064  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_34
+2022-06-05 18:14:33.069  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByParentIdUsingGET_3
+2022-06-05 18:14:33.073  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNotParentUsingGET_2
+2022-06-05 18:14:33.079  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_33
+2022-06-05 18:14:33.084  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchByTitleUsingGET_3
+2022-06-05 18:14:33.086  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_33
+2022-06-05 18:14:33.090  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_35
+2022-06-05 18:14:33.093  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_36
+2022-06-05 18:14:33.098  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_35
+2022-06-05 18:14:33.101  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_34
+2022-06-05 18:14:33.103  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_34
+2022-06-05 18:14:33.108  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_36
+2022-06-05 18:14:33.111  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_37
+2022-06-05 18:14:33.116  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_36
+2022-06-05 18:14:33.119  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_35
+2022-06-05 18:14:33.121  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_35
+2022-06-05 18:14:33.125  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_37
+2022-06-05 18:14:33.128  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_38
+2022-06-05 18:14:33.131  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_37
+2022-06-05 18:14:33.134  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_36
+2022-06-05 18:14:33.137  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delByIdsUsingPOST_5
+2022-06-05 18:14:33.144  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_36
+2022-06-05 18:14:33.148  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_38
+2022-06-05 18:14:33.151  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_39
+2022-06-05 18:14:33.157  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_38
+2022-06-05 18:14:33.160  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_37
+2022-06-05 18:14:33.162  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_37
+2022-06-05 18:14:33.165  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_39
+2022-06-05 18:14:33.168  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_40
+2022-06-05 18:14:33.174  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_39
+2022-06-05 18:14:33.176  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_38
+2022-06-05 18:14:33.179  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_38
+2022-06-05 18:14:33.182  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_40
+2022-06-05 18:14:33.185  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_41
+2022-06-05 18:14:33.191  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_40
+2022-06-05 18:14:33.193  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_39
+2022-06-05 18:14:33.195  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_39
+2022-06-05 18:14:33.199  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_41
+2022-06-05 18:14:33.203  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_42
+2022-06-05 18:14:33.209  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_41
+2022-06-05 18:14:33.212  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_40
+2022-06-05 18:14:33.214  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_40
+2022-06-05 18:14:33.218  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_42
+2022-06-05 18:14:33.221  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_43
+2022-06-05 18:14:33.226  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_42
+2022-06-05 18:14:33.229  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_41
+2022-06-05 18:14:33.231  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_41
+2022-06-05 18:14:33.236  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_43
+2022-06-05 18:14:33.239  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_44
+2022-06-05 18:14:33.244  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_43
+2022-06-05 18:14:33.247  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_42
+2022-06-05 18:14:33.256  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_6
+2022-06-05 18:14:33.259  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delByIdsUsingPOST_6
+2022-06-05 18:14:33.262  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_7
+2022-06-05 18:14:33.285  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_44
+2022-06-05 18:14:33.288  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchPermissionListUsingGET_1
+2022-06-05 18:14:33.294  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_7
+2022-06-05 18:14:33.299  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delByIdsUsingPOST_7
+2022-06-05 18:14:33.304  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_8
+2022-06-05 18:14:33.311  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_44
+2022-06-05 18:14:33.318  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_45
+2022-06-05 18:14:33.322  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByAllSubInTreeByParentIdUsingGET_4
+2022-06-05 18:14:33.328  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_45
+2022-06-05 18:14:33.334  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByParentIdUsingGET_4
+2022-06-05 18:14:33.338  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_43
+2022-06-05 18:14:33.343  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchByTitleUsingGET_4
+2022-06-05 18:14:33.351  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_8
+2022-06-05 18:14:33.356  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_42
+2022-06-05 18:14:33.361  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_9
+2022-06-05 18:14:33.369  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_45
+2022-06-05 18:14:33.374  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_46
+2022-06-05 18:14:33.381  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByAllSubInTreeByParentIdUsingGET_5
+2022-06-05 18:14:33.388  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_46
+2022-06-05 18:14:33.392  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByParentIdUsingGET_5
+2022-06-05 18:14:33.409  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_44
+2022-06-05 18:14:33.415  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchByTitleUsingGET_5
+2022-06-05 18:14:33.418  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_43
+2022-06-05 18:14:33.424  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_46
+2022-06-05 18:14:33.428  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_47
+2022-06-05 18:14:33.434  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_47
+2022-06-05 18:14:33.441  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: importDataUsingPOST_1
+2022-06-05 18:14:33.444  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_45
+2022-06-05 18:14:33.447  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllUsingPOST_1
+2022-06-05 18:14:33.456  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllByPageUsingGET_1
+2022-06-05 18:14:33.469  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2022-06-05 18:14:33.479  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_9
+2022-06-05 18:14:33.485  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delByIdsUsingPOST_8
+2022-06-05 18:14:33.492  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_10
+2022-06-05 18:14:33.502  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_47
+2022-06-05 18:14:33.513  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_48
+2022-06-05 18:14:33.521  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByAllSubInTreeByParentIdUsingGET_6
+2022-06-05 18:14:33.530  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByConditionUsingGET_1
+2022-06-05 18:14:33.538  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_48
+2022-06-05 18:14:33.543  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByParentIdUsingGET_6
+2022-06-05 18:14:33.561  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_46
+2022-06-05 18:14:33.567  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchByTitleUsingGET_6
+2022-06-05 18:14:33.579  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_10
+2022-06-05 18:14:33.597  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delByIdsUsingPOST_9
+2022-06-05 18:14:33.606  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_11
+2022-06-05 18:14:33.637  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_48
+2022-06-05 18:14:33.645  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_49
+2022-06-05 18:14:33.661  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByAllSubInTreeByParentIdUsingGET_7
+2022-06-05 18:14:33.671  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByConditionUsingGET_2
+2022-06-05 18:14:33.679  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_49
+2022-06-05 18:14:33.687  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByParentIdUsingGET_7
+2022-06-05 18:14:33.695  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNotImportByPageUsingGET_1
+2022-06-05 18:14:33.712  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: importJueSeUsingGET_1
+2022-06-05 18:14:33.735  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_2
+2022-06-05 18:14:33.744  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_47
+2022-06-05 18:14:33.752  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchByTitleUsingGET_7
+2022-06-05 18:14:33.766  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_11
+2022-06-05 18:14:33.770  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delByIdsUsingPOST_10
+2022-06-05 18:14:33.774  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_12
+2022-06-05 18:14:33.784  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByAllSubInTreeByParentIdUsingGET_8
+2022-06-05 18:14:33.787  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByParentIdUsingGET_8
+2022-06-05 18:14:33.793  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchByTitleUsingGET_8
+2022-06-05 18:14:33.795  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_44
+2022-06-05 18:14:33.798  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_49
+2022-06-05 18:14:33.801  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_50
+2022-06-05 18:14:33.804  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_50
+2022-06-05 18:14:33.808  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_48
+2022-06-05 18:14:33.820  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_45
+2022-06-05 18:14:33.835  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_50
+2022-06-05 18:14:33.841  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_51
+2022-06-05 18:14:33.849  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_51
+2022-06-05 18:14:33.859  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNotImportByPageUsingGET_2
+2022-06-05 18:14:33.893  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_46
+2022-06-05 18:14:33.897  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_51
+2022-06-05 18:14:33.901  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_52
+2022-06-05 18:14:33.907  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_52
+2022-06-05 18:14:33.910  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_49
+2022-06-05 18:14:33.913  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: uploadUsingPOST_1
+2022-06-05 18:14:33.916  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_47
+2022-06-05 18:14:33.920  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_52
+2022-06-05 18:14:33.923  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_53
+2022-06-05 18:14:33.926  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_53
+2022-06-05 18:14:33.933  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_50
+2022-06-05 18:14:33.939  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_48
+2022-06-05 18:14:33.943  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_53
+2022-06-05 18:14:33.946  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_54
+2022-06-05 18:14:33.952  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_54
+2022-06-05 18:14:33.954  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_51
+2022-06-05 18:14:33.957  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_49
+2022-06-05 18:14:33.960  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_54
+2022-06-05 18:14:33.963  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_55
+2022-06-05 18:14:33.969  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_55
+2022-06-05 18:14:33.972  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_52
+2022-06-05 18:14:33.974  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_50
+2022-06-05 18:14:33.978  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_55
+2022-06-05 18:14:33.981  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_56
+2022-06-05 18:14:33.987  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_56
+2022-06-05 18:14:33.989  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_53
+2022-06-05 18:14:33.992  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_51
+2022-06-05 18:14:33.999  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_56
+2022-06-05 18:14:34.002  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_57
+2022-06-05 18:14:34.007  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_57
+2022-06-05 18:14:34.009  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_54
+2022-06-05 18:14:34.012  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_52
+2022-06-05 18:14:34.016  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_57
+2022-06-05 18:14:34.018  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_58
+2022-06-05 18:14:34.023  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_58
+2022-06-05 18:14:34.025  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_55
+2022-06-05 18:14:34.029  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_53
+2022-06-05 18:14:34.033  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_58
+2022-06-05 18:14:34.035  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_59
+2022-06-05 18:14:34.040  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_59
+2022-06-05 18:14:34.044  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_56
+2022-06-05 18:14:34.046  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_54
+2022-06-05 18:14:34.049  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_59
+2022-06-05 18:14:34.052  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_60
+2022-06-05 18:14:34.056  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_60
+2022-06-05 18:14:34.059  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_57
+2022-06-05 18:14:34.062  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_55
+2022-06-05 18:14:34.065  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_60
+2022-06-05 18:14:34.067  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_61
+2022-06-05 18:14:34.072  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_61
+2022-06-05 18:14:34.075  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_58
+2022-06-05 18:14:34.077  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_56
+2022-06-05 18:14:34.080  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_61
+2022-06-05 18:14:34.083  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_62
+2022-06-05 18:14:34.087  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_62
+2022-06-05 18:14:34.090  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_59
+2022-06-05 18:14:34.093  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_57
+2022-06-05 18:14:34.096  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_62
+2022-06-05 18:14:34.099  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_63
+2022-06-05 18:14:34.103  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_63
+2022-06-05 18:14:34.106  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_60
+2022-06-05 18:14:34.108  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_58
+2022-06-05 18:14:34.112  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_63
+2022-06-05 18:14:34.114  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_64
+2022-06-05 18:14:34.120  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_64
+2022-06-05 18:14:34.123  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_61
+2022-06-05 18:14:34.126  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_59
+2022-06-05 18:14:34.133  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_64
+2022-06-05 18:14:34.136  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_65
+2022-06-05 18:14:34.141  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_65
+2022-06-05 18:14:34.144  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_62
+2022-06-05 18:14:34.146  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_60
+2022-06-05 18:14:34.150  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_65
+2022-06-05 18:14:34.153  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_66
+2022-06-05 18:14:34.158  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_66
+2022-06-05 18:14:34.161  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_63
+2022-06-05 18:14:34.163  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_61
+2022-06-05 18:14:34.167  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_66
+2022-06-05 18:14:34.170  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_67
+2022-06-05 18:14:34.175  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_67
+2022-06-05 18:14:34.177  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_64
+2022-06-05 18:14:34.179  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_62
+2022-06-05 18:14:34.182  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_67
+2022-06-05 18:14:34.185  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_68
+2022-06-05 18:14:34.188  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_68
+2022-06-05 18:14:34.192  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_65
+2022-06-05 18:14:34.225  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_12
+2022-06-05 18:14:34.242  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_63
+2022-06-05 18:14:34.260  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_13
+2022-06-05 18:14:34.287  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByConditionUsingGET_3
+2022-06-05 18:14:34.297  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByConditionUsingGET_4
+2022-06-05 18:14:34.306  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByConditionUsingGET_5
+2022-06-05 18:14:34.352  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: importAllByIdsUsingPOST_1
+2022-06-05 18:14:34.368  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: importDataUsingPOST_2
+2022-06-05 18:14:34.431  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_64
+2022-06-05 18:14:34.435  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_68
+2022-06-05 18:14:34.437  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_69
+2022-06-05 18:14:34.443  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_69
+2022-06-05 18:14:34.445  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_66
+2022-06-05 18:14:34.448  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_65
+2022-06-05 18:14:34.451  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_69
+2022-06-05 18:14:34.455  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_70
+2022-06-05 18:14:34.460  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_70
+2022-06-05 18:14:34.465  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_66
+2022-06-05 18:14:34.469  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_70
+2022-06-05 18:14:34.472  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_71
+2022-06-05 18:14:34.477  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_71
+2022-06-05 18:14:34.479  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_67
+2022-06-05 18:14:34.481  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_67
+2022-06-05 18:14:34.484  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_71
+2022-06-05 18:14:34.486  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_72
+2022-06-05 18:14:34.490  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_72
+2022-06-05 18:14:34.493  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_68
+2022-06-05 18:14:34.507  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: delAllByIdsUsingPOST_68
+2022-06-05 18:14:34.512  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByNameUsingGET_1
+2022-06-05 18:14:34.516  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_72
+2022-06-05 18:14:34.520  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllUsingGET_73
+2022-06-05 18:14:34.534  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByPageUsingGET_73
+2022-06-05 18:14:34.542  INFO 12316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveOrUpdateUsingPOST_69
+2022-06-05 18:14:34.595  INFO 12316 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-06-05 18:14:34.984  INFO 12316 --- [restartedMain] o.s.s.quartz.LocalDataSourceJobStore     : Freed 0 triggers from 'acquired' / 'blocked' state.
+2022-06-05 18:14:35.081  INFO 12316 --- [restartedMain] o.s.s.quartz.LocalDataSourceJobStore     : Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2022-06-05 18:14:35.081  INFO 12316 --- [restartedMain] o.s.s.quartz.LocalDataSourceJobStore     : Recovery complete.
+2022-06-05 18:14:35.082  INFO 12316 --- [restartedMain] o.s.s.quartz.LocalDataSourceJobStore     : Removed 0 'complete' triggers.
+2022-06-05 18:14:35.086  INFO 12316 --- [restartedMain] o.s.s.quartz.LocalDataSourceJobStore     : Removed 0 stale fired job entries.
+2022-06-05 18:14:35.087  INFO 12316 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-06-05 18:14:35.158  INFO 12316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1314 (http) with context path ''
+2022-06-05 18:14:35.161  INFO 12316 --- [restartedMain] cn.exrick.xboot.XbootApplication         : Started XbootApplication in 28.063 seconds (JVM running for 33.044)
+2022-06-05 18:14:35.531  INFO 12316 --- [RMI TCP Connection(2)-192.168.140.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-05 18:14:35.531  INFO 12316 --- [RMI TCP Connection(2)-192.168.140.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-05 18:14:35.544  INFO 12316 --- [RMI TCP Connection(2)-192.168.140.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2022-06-05 18:14:35.776  INFO 12316 --- [boundedElastic-7] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2022-06-05 18:14:35.778  INFO 12316 --- [boundedElastic-7] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2022-06-05 18:14:40.515  INFO 12316 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as db5a63a24eef
+2022-06-05 23:10:34.378  INFO 12316 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-06-05 23:10:34.380  INFO 12316 --- [SpringContextShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-06-05 23:10:34.381  INFO 12316 --- [SpringContextShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 0 subscriber(s).
+2022-06-05 23:10:34.381  INFO 12316 --- [SpringContextShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2022-06-05 23:10:34.388  INFO 12316 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2022-06-05 23:10:34.388  INFO 12316 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-06-05 23:10:34.388  INFO 12316 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-06-05 23:10:34.388  INFO 12316 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-06-05 23:10:34.390  INFO 12316 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-06-05 23:10:34.429  INFO 12316 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2022-06-05 23:10:36.543  INFO 12316 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'primaryTaskExecutor'
+2022-06-05 23:10:36.557  INFO 12316 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-05 23:10:36.567  INFO 12316 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-05 23:10:36.597  INFO 12316 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
